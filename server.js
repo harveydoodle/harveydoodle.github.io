@@ -6,9 +6,9 @@ var path = require("path");
 // const PORT=8080; 
 const PORT = process.env.PORT || 8080;
 
-if (request.url == '/') {
-    filePath = "./index.html";
-  }
+// if (request.url == '/') {
+//     filePath = "./index.html";
+//   }
 
 //We need a function which handles requests and send response
 function handleRequest(request, response){
