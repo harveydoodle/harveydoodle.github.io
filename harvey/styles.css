@@ -1,7 +1,8 @@
 body {
     margin: 0;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Century Gothic', sans-serif;
 }
 
 /* LANDING PAGE ANIMATION*/
@@ -42,16 +43,17 @@ p {
 }
 
 img {
-    width: 50px;
+    height: 10vh;
     display:inline-block;
 }
 
 .page {
-    border: 5vh solid lightgoldenrodyellow;
+    border: 5vh solid lightblue;
     /*border-bottom: 5vh black solid;*/
     height: 90vh;
     padding: 0 5%;
-    background: white;
+    background: golde
+    ;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -72,18 +74,26 @@ img {
     border: 0px solid white;
     border-radius: 100%;
     margin: 22px;
-    background: rgba(255, 255, 255, 1);
+    background: lightblue;
+    transition: background 0.5s ease;
 }
 
 .each-skill:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(225, 225, 225, 0);
 }
 .each-skill:hover span{
     font-size: 24px;
     opacity:1;
 }
 .each-skill > span{
+    /*color: white;*/
+    text-shadow:
+    -1px -1px 0 #FFF,
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF; 
     opacity: 0;
+    transition: opacity 0.5s ease;
 }
 .each-work {
     height: 200px;
@@ -96,7 +106,6 @@ img {
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 #jquery{
     background-image: url("images/jquery.png");
