@@ -15,6 +15,7 @@ app.set('port', (process.env.PORT || 8080));
 // }
 
 app.use(express.static(__dirname + '/public'));
+app.use("/styles", express.static(__dirname + '/styles'));
 
 app.get('/', function(request, response) {
   response.send('index')
