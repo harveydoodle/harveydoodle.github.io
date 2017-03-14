@@ -1,3 +1,4 @@
+
 //Lets require/import the HTTP module
 var http = require('http');
 var path = require("path");
@@ -5,8 +6,6 @@ var path = require("path");
 //Lets define a port we want to listen to
 // const PORT=8080; 
 const PORT = process.env.PORT || 8080;
-
-
 
 //We need a function which handles requests and send response
 function handleRequest(request, response){
@@ -20,7 +19,8 @@ var server = http.createServer(function(request, response) {
 
   if (request.url == '/') {
     filePath = "./index.html";
-  } else {
+  } 
+  else {
     filePath = "index.html";
   }
 
