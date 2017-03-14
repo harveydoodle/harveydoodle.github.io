@@ -17,6 +17,8 @@
     "url": "https://github.com/harveydoodle/harveydoodle.github.io/issues"
   },
   "homepage": "https://github.com/harveydoodle/harveydoodle.github.io#readme",
-  "dependencies": {},
+  "dependencies": {
+    "http": "0.0.0"
+  },
   "devDependencies": {}
 }
