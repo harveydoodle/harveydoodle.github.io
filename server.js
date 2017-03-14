@@ -6,9 +6,7 @@ var path = require("path");
 // const PORT=8080; 
 const PORT = process.env.PORT || 8080;
 
-// if (request.url == '/') {
-//     filePath = "./index.html";
-//   }
+
 
 //We need a function which handles requests and send response
 function handleRequest(request, response){
@@ -18,6 +16,10 @@ function handleRequest(request, response){
 //Create a server
 var server = http.createServer(handleRequest);
 
+if (request.url == '/') {
+    filePath = "./index.html";
+  }
+  
 //Lets start our server
 server.listen(PORT, function(){
     //Callback triggered when server is successfully listening. Hurray!
