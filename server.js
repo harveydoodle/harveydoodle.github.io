@@ -14,12 +14,21 @@ function handleRequest(request, response){
 }
 
 //Create a server
-var server = http.createServer(handleRequest);
+// var server = http.createServer(handleRequest);
+var server = http.createServer(function(request, response) {
+  var filePath = false;
 
-if (request.url == '/') {
-    filePath = "./index.html";
+  if (request.url == '/') {
+    filePath = "public/index.html";
+  } else {
+    filePath = "public" + request.url;
   }
-  
+
+  var absPath = "./" + filePath;
+  serverWorking(response, absPath);
+});
+
+
 //Lets start our server
 server.listen(PORT, function(){
     //Callback triggered when server is successfully listening. Hurray!
