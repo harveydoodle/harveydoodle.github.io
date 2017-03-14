@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/harveydoodle/harveydoodle.github.io#readme",
   "dependencies": {
+    "express": "^4.15.2",
     "http": "0.0.0",
     "path": "^0.12.7"
   },

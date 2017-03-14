@@ -1,7 +1,7 @@
 
 //Lets require/import the HTTP module
-let http = require('http');
-let path = require("path");
+// let http = require('http');
+// let path = require("path");
 var express = require('express');
 var app = express();
 
