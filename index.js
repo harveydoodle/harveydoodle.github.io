@@ -1,1 +1,1 @@
-{<h1>asdf</h1>}
+document.write('asdf');
