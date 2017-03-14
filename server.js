@@ -24,8 +24,8 @@ var server = http.createServer(function(request, response) {
     filePath = "index.html";
   }
 
-  var absPath = "./" + filePath;
-  serverWorking(response, absPath);
+//   var absPath = "./" + filePath;
+//   serverWorking(response, absPath);
 });
 
 
