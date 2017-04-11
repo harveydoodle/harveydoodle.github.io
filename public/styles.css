@@ -163,3 +163,6 @@ a:visited {
     text-decoration: none;
     color:black;
 }
+a:hover {
+    font-weight: bold;
+}
